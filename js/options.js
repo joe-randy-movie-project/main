@@ -35,21 +35,18 @@ searchTitle.addEventListener('keyup', utils.debounce (async function (event) {
 	let genre = document.querySelector('#editGenre')
 	let rating = document.querySelector('#editRating')
 	let movieToSearch ={title, genre, rating }
-	let dontSearch= ['the ', 'a ', 'an ', 'to ', 'the', 'a', 'an', 'to' ];
-	for await (const word of dontSearch) {
-
-		if (title.toLowerCase()=== word.toLowerCase()){
-			genre.value = '';
-			rating.value = '';
-		} else {
-			let searchResult = await searchFavorite(movieToSearch);
-			genre.value =  searchResult.genre;
-			rating.value = searchResult.rating;
-		}
-		console.log(word);
-		console.log(title);
+	let dontSearch= ['the ', 'a ', 'an ', 'to ', 'the', 'a', 'an', 'to'];
+	// Check if the title matches any of the words in dontSearch and if the title is longer than 3 characters
+	if (!dontSearch.includes(title.toLowerCase()) && title.length > 3) {
+		let searchResult = await searchFavorite(movieToSearch);
+		genre.value = searchResult.genre;
+		rating.value = searchResult.rating;
+	} else {
+		// If the title matches any of the words in dontSearch, clear the genre and rating inputs
+		genre.value = '';
+		rating.value = '';
 	}
-}, 1000));
+}, 800));
 
 editMovieButton.addEventListener('click', async () => {
 	let title = document.querySelector('#searchTitle').value;

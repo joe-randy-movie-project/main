@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movies!</title>
+	<link rel="stylesheet" href="css/resets.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-wrapper">
+	<!--	NAVBAR-->
+	<div class="container navbar">
+		<header class="row justify-space-between">
+			<div class="column">
+				<div class="row align-center no-padding">
+					<h1>Favorite Movies</h1>
+				</div>
+			</div>
+			<div class="column justify-center">
+				<div class="row nav-links justify-end">
+					<a href="index.html">Home</a>
+					<a href="options.html">Options</a>
+				</div>
+			</div>
+		</header>
+	</div>
+	<!--	MAIN CONTENT-->
+	<div class="container">
+		<div class="row justify-center">
+<!--				Form to Add Movie -->
+			<fieldset class="column align-center">
+				<legend><h3>Enter Movie Details:</h3></legend>
+				<h4><label for="movieTitle">Movie Title:</label></h4>
+				<input type="text" id="movieTitle" name="movieTitle">
+				<h4><label for="movieRating">Rate your Movie:</label></h4>
+				<select name="movieRating" id="movieRating">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<h4><label for="movieGenre">Movie Genre:</label></h4>
+				<select name="movieGenre" id="movieGenre">
+					<option value="Action">Action</option>
+					<option value="Adventure">Adventure</option>
+					<option value="Animation">Animation</option>
+					<option value="Comedy">Comedy</option>
+					<option value="Crime">Crime</option>
+					<option value="Documentary">Documentary</option>
+					<option value="Drama">Drama</option>
+					<option value="Family">Family</option>
+					<option value="Fantasy">Fantasy</option>
+					<option value="Historical">Historical</option>
+					<option value="Horror">Horror</option>
+					<option value="Musical">Musical</option>
+					<option value="Mystery">Mystery</option>
+					<option value="Romance">Romance</option>
+					<option value="Science Fiction">Science Fiction</option>
+					<option value="Sports">Sports</option>
+					<option value="Thriller">Thriller</option>
+					<option value="War">War</option>
+					<option value="Western">Western</option>
+				</select>
+				<button type="submit" class="addMovie">Add Movie</button>
+			</fieldset>
+<!--				Delete a Movie-->
+			<fieldset class="column align-center">
+				<legend><h3>Delete a Movie:</h3></legend>
+				<h4><label for="deleteMovie">Movie Title:</label></h4>
+				<input type="text" id="deleteMovie" name="deleteMovie">
+				<button type="submit" class="deleteMovie">Delete Movie</button>
+			</fieldset>
+		</div>
+	</div>
+</div>
+<script type="module" src="js/options.js"></script>
+</body>
+</html>

@@ -13,7 +13,7 @@ export const renderFavorites = (favorites) => {
 				<p>${favorite.genre}</p>
 				<p>${favorite.rating}</p>
 			</div>	
-			<a href="#" target="_blank">Go to Movie</a>
+			<a href="#">Delete</a>
 		`;
 		movieGrid.appendChild(favoriteItem);
 	});

@@ -11,7 +11,7 @@ export const renderFavorites = (favorites) => {
 			<h2>${favorite.title}</h2>
 			<input type="text" placeholder="New Title" id="editTitle" class="hidden edit-title">
 			<div class="row justify-space-between">
-				<p>${favorite.genre}</p>
+				<p>Genre: ${favorite.genre}</p>
 				<select name="editGenre" id="editGenre" class="hidden edit-genre">
 					<option value="Action">Action</option>
 					<option value="Adventure">Adventure</option>
@@ -33,7 +33,7 @@ export const renderFavorites = (favorites) => {
 					<option value="War">War</option>
 					<option value="Western">Western</option>
 				</select>
-				<p>${favorite.rating}</p>
+				<p>Rating: ${favorite.rating}</p>
 				<select name="editRating" id="editRating" class="hidden edit-rating">
 					<option value="1">1</option>
 					<option value="2">2</option>

@@ -1,5 +1,6 @@
 import * as movieUtils from './movieUtils.js';
 import {renderFavorites} from "./render.js";
+import * as utils from './utils.js';
 
 
 const addMovieButton = document.querySelector('.addMovie');
@@ -36,22 +37,19 @@ moviesParent.addEventListener('click', async function (event) {
 
 
 
-// searchTitle.addEventListener('keyup', utils.debounce (async function (event) {
-// 	event.preventDefault()
-// 	let title = document.querySelector('#searchTitle').value;
-// 	let genre = document.querySelector('#editGenre')
-// 	let rating = document.querySelector('#editRating')
-// 	let movieToSearch ={title, genre, rating }
-// 	let dontSearch= ['the ', 'a ', 'an ', 'to ', 'the', 'a', 'an', 'to'];
-// 	// Check if the title matches any of the words in dontSearch and if the title is longer than 3 characters
-// 	if (!dontSearch.includes(title.toLowerCase()) && title.length > 3) {
-// 		let searchResult = await movieUtils.searchFavorite(movieToSearch);
-// 		genre.value = searchResult.genre;
-// 		rating.value = searchResult.rating;
-// 	} else {
-// 		// If the title matches any of the words in dontSearch, clear the genre and rating inputs
-// 		genre.value = '';
-// 		rating.value = '';
-// 	}
-// }, 800));
+searchTitle.addEventListener('keyup', utils.debounce (async function (event) {
+	event.preventDefault()
+	let title = document.querySelector('#searchTitle').value;
+	// let genre = document.querySelector('#editGenre')
+	// let rating = document.querySelector('#editRating')
+	let movieToSearch =title
+	let dontSearch= ['the ', 'a ', 'an ', 'to ', 'the', 'a', 'an', 'to'];
+	// Check if the title matches any of the words in dontSearch and if the title is longer than 3 characters
+	if (!dontSearch.includes(title.toLowerCase()) && title.length > 3) {
+		let searchResult = await movieUtils.searchFavorite(movieToSearch);
+		console.log(searchResult);
+		await renderFavorites(searchResult)
+	}
+
+}, 800));
 

@@ -3,8 +3,8 @@
     {
       "id": 1,
       "title": "The Shawshank Redemption",
-      "genre": "Action",
-      "rating": "1"
+      "genre": "Thriller",
+      "rating": "5"
     },
     {
       "title": "The Shining",
@@ -23,6 +23,12 @@
       "genre": "Science Fiction",
       "rating": "5",
       "id": 8
+    },
+    {
+      "title": "There Will Be Blood",
+      "genre": "Historical",
+      "rating": "5",
+      "id": 9
     }
   ]
 }

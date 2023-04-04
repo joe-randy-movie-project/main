@@ -6,7 +6,7 @@ export const renderFavorites = (favorites) => {
 		favoriteItem.classList.add('movie-card');
 		favoriteItem.innerHTML = `
 			<div class="img-wrapper">
-				<img src="https://via.placeholder.com/300x300?" alt="Movie image" class="avatar">
+				<img src="../images/blockbuster.png" alt="Movie image" class="avatar">
 			</div>
 			<h2>${favorite.title}</h2>
 			<input type="text" placeholder="New Title" id="editTitle" class="hidden edit-title">

@@ -9,6 +9,26 @@
 	width: 300px;
 	text-align: center;
 	box-shadow: gray 0 0 10px 0;
+	position: relative;
+}
+
+
+.edit {
+	background-image: url("../images/edit-symbol.svg");
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	border-radius: 9999px;
+	border: unset;
+	background-color: unset;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
 }
 
 h2 {

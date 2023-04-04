@@ -35,6 +35,23 @@ export const getFavorite = async (id) => {
 
 export const searchFavorite = async (movie) => {
 	let favorites = await getFavorites();
+	if (typeof (movie) === 'string') {
+		let favorite = favorites.find((result) => {
+			let compareMovie = result.title.toLowerCase()
+			console.log(compareMovie);
+			let searchResult = movie.toLowerCase()
+			console.log(searchResult);
+			if (compareMovie.includes(searchResult)) {
+				return result.title
+
+			}
+		});
+		if (favorite) {
+			return favorite;
+		} else {
+			return 'No movie was found with that title';
+		}
+	}
 	if (movie.title) {
 		let favorite = favorites.find((result) => {
 			let compareMovie = result.title.toLowerCase()

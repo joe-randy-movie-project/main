@@ -10,6 +10,7 @@
 	text-align: center;
 	box-shadow: gray 0 0 10px 0;
 	position: relative;
+	margin: 10px;
 }
 
 
@@ -29,6 +30,8 @@
 
 .main {
 	margin: 20px;
+	max-height: 50vh;
+	overflow-y: scroll;
 }
 
 .hidden {

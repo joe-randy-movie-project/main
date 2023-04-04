@@ -13,9 +13,9 @@
       "id": 2
     },
     {
-      "title": "The Godfather",
-      "genre": "Crime",
-      "rating": "4",
+      "title": "BobFather",
+      "genre": "Comedy",
+      "rating": "3",
       "id": 7
     },
     {
@@ -29,6 +29,24 @@
       "genre": "Historical",
       "rating": "5",
       "id": 9
+    },
+    {
+      "title": "Shrek",
+      "genre": "Animation",
+      "rating": "5",
+      "id": 10
+    },
+    {
+      "title": "Out of Bounds",
+      "genre": "Action",
+      "rating": "2",
+      "id": 11
+    },
+    {
+      "title": "Otto",
+      "genre": "Drama",
+      "rating": "3",
+      "id": 12
     }
   ]
 }

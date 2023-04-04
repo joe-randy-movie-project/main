@@ -1,17 +1,17 @@
 import * as utils from './utils.js';
 import * as movieUtils from './movieUtils.js';
 import * as renderUtils from './render.js';
-import {getFavorites} from "./movieUtils.js";
+import * as options from './options.js';
 
 console.log(await movieUtils.getFavorites());
 
-const addMovieButton = document.querySelector('.addMovie');
-const deleteMovieButton = document.querySelector('.deleteMovie');
+// const addMovieButton = document.querySelector('.addMovie');
+// const deleteMovieButton = document.querySelector('.deleteMovie');
 
 setTimeout(async () => {
 	renderUtils.renderFavorites(await movieUtils.getFavorites()); 
 	}, 
-	3000);
+	0);
 
 
 

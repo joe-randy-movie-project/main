@@ -3,26 +3,26 @@
     {
       "id": 1,
       "title": "The Shawshank Redemption",
-      "genre": "Drama",
-      "rating": 5
-    },
-    {
-      "id": 2,
-      "title": "The Godfather",
-      "genre": "Crime",
-      "rating": 5
+      "genre": "Action",
+      "rating": "1"
     },
     {
       "title": "The Shining",
-      "genre": "Horror",
-      "rating": "5",
-      "id": 3
+      "genre": "Thriller",
+      "rating": "3",
+      "id": 2
+    },
+    {
+      "title": "The Godfather",
+      "genre": "Crime",
+      "rating": "4",
+      "id": 7
     },
     {
       "title": "The Matrix",
-      "genre": "Horror",
+      "genre": "Science Fiction",
       "rating": "5",
-      "id": 4
+      "id": 8
     }
   ]
 }

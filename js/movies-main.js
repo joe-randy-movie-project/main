@@ -11,7 +11,7 @@ const searchTitle = document.querySelector('#searchTitle');
 setTimeout(async () => {
 	renderUtils.renderFavorites(await movieUtils.getFavorites());
 	},
-	0);
+	1000);
 
 addMovieButton.addEventListener('click', async () => {
 	let movie = {
@@ -40,8 +40,6 @@ moviesParent.addEventListener('click', async function (event) {
 		await buttons.doneButton();
 	}
 });
-
-
 
 searchTitle.addEventListener('keyup', utils.debounce (async function (event) {
 	event.preventDefault()

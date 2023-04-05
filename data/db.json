@@ -7,9 +7,9 @@
       "rating": "5"
     },
     {
-      "title": "BobFather",
-      "genre": "Fantasy",
-      "rating": "4",
+      "title": "The Bobfather",
+      "genre": "Comedy",
+      "rating": "3",
       "id": 7
     },
     {
@@ -53,12 +53,6 @@
       "genre": "Family",
       "rating": "5",
       "id": 14
-    },
-    {
-      "title": "",
-      "genre": "Action",
-      "rating": "1",
-      "id": 15
     }
   ]
 }

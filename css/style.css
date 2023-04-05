@@ -13,6 +13,10 @@
 	margin: 10px;
 }
 
+.movie-card:hover {
+	transform: scale(1.05);
+}
+
 
 .edit {
 	background-image: url("../images/edit-symbol.svg");
